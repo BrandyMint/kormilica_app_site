@@ -1,6 +1,6 @@
 "use strict"
-LIVERELOAD_PORT = 35729
-SERVER_PORT = 3006
+LIVERELOAD_PORT = 35730
+SERVER_PORT = 3005
 #lrSnippet = require("connect-livereload")(port: LIVERELOAD_PORT)
 mountFolder = (connect, dir) ->
   connect.static require("path").resolve(dir)
