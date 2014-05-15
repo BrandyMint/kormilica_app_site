@@ -155,7 +155,6 @@ module.exports = (grunt) ->
     coffee:
       dist:
         files: [
-
           # rather than compiling multiple files here you should
           # require them into your main .coffee file
           expand: true
@@ -336,7 +335,8 @@ module.exports = (grunt) ->
       bower:
         files: [
            { expand: true, cwd: "<%= yeoman.app %>/styles/", src: '*', dest: "<%= yeoman.bower %>/lib/sass/"},
-           { expand: true, cwd: "<%= yeoman.dist %>", src: 'kormapp/images/*', dest: "<%= yeoman.bower %>/lib/"},
+           { expand: true, cwd: "<%= yeoman.app %>/bower_components/kormilica_app/lib/", src: '*', dest: "<%= yeoman.bower %>/lib/"},
+
            { "<%= yeoman.bower %>/lib/kormilica_app.js": "<%= yeoman.dist %>/scripts/main.js" },
            { "<%= yeoman.bower %>/lib/styles/kormilica_app.css": "<%= yeoman.dist %>/styles/main.css" },
            { "<%= yeoman.bower %>/lib/styles/kormilica_app.core.css": "<%= yeoman.dist %>/styles/core.css" }
