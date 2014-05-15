@@ -1,5 +1,5 @@
 {
-  "name": "kormilica_app",
+  "name": "kormilica_app_site",
   "version": "0.1.31",
   "main": [
     "/kormilica_app.js"
@@ -16,7 +16,7 @@
     "underscore": "~1.6",
     "cordova-shim": "git@github.com:SuperSkunk/cordova-shim.git",
     "pace": "~0.5.1",
-    "kormilica_app": "git@github.com:BrandyMint/kormilica_app.git#develop"
+    "kormilica_app": "git@github.com:BrandyMint/kormilica_app.git#sib/component"
   },
   "devDependencies": {
     "jquery": "~1.9.0",
